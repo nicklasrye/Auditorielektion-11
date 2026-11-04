@@ -1,0 +1,4 @@
+
+add_executable(test_calculator test_calculator.c)
+target_link_libraries(test_calculator polish_calculator mtest)
+discover_tests(test_calculator)
