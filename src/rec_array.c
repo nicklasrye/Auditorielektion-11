@@ -12,13 +12,18 @@ void print_array(int arr[], int size) {
         printf("\n");
         return;
     }
-
     //Rekursivt tilfælde:
     printf("%d, ", arr[0]);
     //printf resten af arr
     print_array(&arr[1], size -1);
 }
-
+void double_array(int* arr, int size) {
+    //Grundtilfælde:
+    if (size == 0) return;
+    //Rekursivt tilfælde:
+    arr[0] *= 2;
+    double_array(arr + 1, size - 1);
+}
 
 
 int main(void) {
