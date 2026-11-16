@@ -11,6 +11,32 @@ unsigned int power_of(unsigned int tal, unsigned int potens) {
     return tal * temp;
 }
 
+int clac() {
+    char c;
+    scanf("%c" ,&c);
+    int tal1, tal2
+
+    switch (c) {
+        case '+':
+            int tal1 = calc();
+            int tal2 = calc();
+            return tal1 + tal2;
+        case '*':
+            int tal1 = calc();
+            int tal2 = calc();
+            return tal1 - tal2;
+        case '-':
+            int tal1 = calc();
+            int tal2 = calc();
+            return tal1 - tal2;
+        case '/':
+            int tal1 = calc();
+            int tal2 = calc();
+            return tal1 / tal2;
+            
+    }
+}
+
 
 int main(void) {
     unsigned int result = power_of(3, 4);
