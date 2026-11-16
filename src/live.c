@@ -14,7 +14,9 @@ unsigned int power_of(unsigned int tal, unsigned int potens) {
 int clac() {
     char c;
     scanf("%c" ,&c);
-    int tal1, tal2
+    if (isadigit(c)) {
+        return c- '0';
+    }
 
     switch (c) {
         case '+':
